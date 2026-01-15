@@ -46,9 +46,26 @@ To demonstrate the effectiveness of differential resource allocation, we evaluat
 
 In this evaluation, we conducted experiments in a real-world workload environment to validate the effectiveness of the proposed Network-Gated CPU Risk Score (NG-CRS) and the system built upon it. Specifically, we compared NG-CRS with three existing risk scoring baselines to assess how effectively each approach adapts to network-based attack scenarios. The baselines include: (1) CPU-only, with quantifies abnormal CPU usage based on deviations from an exponentially weighted moving average (EWMA); (2) Network-only, which measures network burstiness relative to a smoothed baseline; and (3) Non-Gated CPU–Network, which combines risk scores derived from CPU and network utilization through a weighted sum without explicitly modeling their dependency.
 
-<p align="center">
-  <img width="500" height="125" alt="Image" src="https://github.com/user-attachments/assets/5e320f37-9b75-44e8-8635-00a3853f3cf1" />
-  <img width="500" height="125" alt="Image" src="https://github.com/user-attachments/assets/d973a4a7-cdb3-4f6d-88e3-21481469ee15" />
-  <img width="500" height="125" alt="Image" src="https://github.com/user-attachments/assets/27b06217-bcaf-410a-95ef-090ab12db9a2" />
-  <img width="500" height="125" alt="Image" src="https://github.com/user-attachments/assets/0e669a60-794b-4c9f-a984-6241aaf5b6e4" />
-</p>
+  <div align="center">
+    <img width="500" height="125" alt="Image" src="https://github.com/user-attachments/assets/d973a4a7-cdb3-4f6d-88e3-21481469ee15" />
+    <br/>
+    <em>CPU-only baseline</em>
+  </div>
+  
+  <div align="center">
+    <img width="500" height="125" alt="Image" src="https://github.com/user-attachments/assets/5e320f37-9b75-44e8-8635-00a3853f3cf1" />
+    <br/>
+    <em>Network-only baseline</em>
+  </div>
+  
+  <div align="center">
+    <img width="500" height="125" alt="Image" src="https://github.com/user-attachments/assets/0e669a60-794b-4c9f-a984-6241aaf5b6e4" />
+    <br/>
+    <em>Non-gated CPU-Network baseline</em>
+  </div>
+
+  <div align="center">
+    <img width="500" height="125" alt="Image" src="https://github.com/user-attachments/assets/27b06217-bcaf-410a-95ef-090ab12db9a2" />
+    <br/>
+    <em>Proposed Network-gated CPU risk score (NG-CRS)</em>
+  </div>
